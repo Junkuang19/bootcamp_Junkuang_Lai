@@ -4,7 +4,7 @@
 ## Problem Statement
 Human traders often fall victim to emotional decision-making, leading to poor trade execution and avoidable losses. By automating trading strategies, we can eliminate emotional bias and ensure disciplined adherence to predefined rules.
 
-This project aims to develop a Python-based trading bot using IBridgePy to execute strategies with precision, minimizing human error. Success will be measured by backtesting strategies against the SPY ETF benchmark—if a strategy outperforms SPY, the project is deemed successful.
+This project aims to develop a Python-based trading bot using CursorAI to execute strategies with precision, minimizing human error. Success will be measured by backtesting strategies against the SPY ETF benchmark—if a strategy outperforms SPY, the project is deemed successful.
 
 ## Stakeholder & User
 Primary Stakeholder & User: Myself (academic & potential end-user)
