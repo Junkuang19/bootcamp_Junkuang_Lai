@@ -31,7 +31,7 @@ Data Limitations: Restricted to accessible market data.
 
 ## Lifecycle Mapping
 Goal → Stage → Deliverable
-Set up IBridgePy → Installation → Functional API Integration
+Set up CursorAI → Installation → Functional API Integration
 Develop Strategies → Coding → Backtested Trading Logic
 Evaluate Performance → Analysis → Strategy Profit Comparisons
 
