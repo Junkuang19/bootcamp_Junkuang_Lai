@@ -23,7 +23,7 @@ Assumptions:
 Historical pricing data is accurate and reliable.
 Constraints:
 Time: Limited to a 2-week bootcamp (live trading not feasible).
-Data: Dependent on IB API's available stock price history.
+Data: Dependent on CursorAI API's available stock price history.
 
 ## Known Unknowns / Risks
 Historical Bias: Backtested success ≠ future profitability.
