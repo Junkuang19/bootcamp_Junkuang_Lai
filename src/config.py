@@ -1,4 +1,11 @@
-import sys,os
+import os
+from dotenv import load_dotenv
 
-def get_key(name, default=None)
-    return os.getenv(name,default)
+def load_env():
+    load_dotenv()
+
+def get_key(key_name):
+    return os.getenv(key_name)
+
+def get_data_dir():
+    return get_key('DATA_DIR') or './data'
