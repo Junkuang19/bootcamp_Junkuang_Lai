@@ -6,6 +6,6 @@ I noticed a large number of NAN values, which I consider a bad sign and suggests
 
 #Reflection
 
-Through the course, I gained a general understanding of the pros and cons of these methods, as well as their usage scenarios. For example, IQR is robust and insensitive to extreme values, making it suitable for rapid univariate screening of skewed/long-tailed features. Z-score is more suitable for approximating normal data, and MAD is suitable for heavy-tailed skewed data.
+Through the course, I gained a general understanding of the pros and cons of these methods, as well as their usage scenarios. 
 
 However, I'm not sure why MCAR/MNAR has so much missing data, but my own research has revealed that these two methods are ineffective, even negligible, for this data set. Furthermore, MAR only has four correlations between missing values and other variables (perhaps the dataset is too small?). Overall, to improve the visibility of the dataset, I used median imputation and removed the row with 80% missing data. This resulted in a more consistent and trended dataset.
