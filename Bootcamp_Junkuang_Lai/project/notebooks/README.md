@@ -2,17 +2,16 @@
 **Stage:** Problem Framing & Scoping (Stage 01)
 
 ## Problem Statement
-Individual investors often face challenges in analyzing stock price trends and making informed, data-driven predictions due to a lack of tools and expertise. This project aims to tackle this issue by developing a reproducible pipeline that automates the collection, cleaning, and analysis of daily stock data for Nvidia (NVDA) for the year 2023. The objective is to identify historical price patterns, detect anomalies, and create a regression model to predict future prices, enabling more informed investment decisions.
+Individual investors often face challenges in analyzing stock price trends and making informed, data-driven predictions due to a lack of tools and expertise. This project aims to tackle this issue by developing a reproducible pipeline that automates the collection, cleaning, and analysis stock data of Nvidia (NVDA) on 2024 June. The objective is to identify historical price patterns, detect anomalies, and create a regression model to predict future prices, enabling more informed investment decisions.
 
 ## Stakeholder & User
 + Stakeholder: Retail investors, financial bloggers, and educators seeking to empower individuals with better stock analytics,etc.
 + User: Individual investors who want to track, analyze, and forecast Nvidia stock performance as part of their investment workflow. Users interact with the output via notebooks, dashboards, or reports, typically before making buy/sell/hold decisions.
 
 ## Useful Answer & Decision
-The project will identify historically profitable strategies through backtesting. While past performance does not guarantee future success, these strategies serve as predictive models.
-Deliverables Include:
-Quantitative performance metrics
-Comparative performance charts
++ Visualiztion: The project will display specific knowledge about data cleaning processes(eg. MCAR, MNAR, etc.) and outliars detecting. And giving a visualize chart to show advantages after data-cleaning.
++ Educative: Stakeholders can reference from the project and foreseeing the future trends.
++ Practical: Cleaned dataset, EDA visualizations, and a regression-based price prediction notebook. These outputs help users understand past performance and make informed buy/sell/hold decisions.
 
 ## Assumptions & Constraints
 + The data is obtained from Yahoo Finance using the yfinance library, focusing on daily OHLCV for NVDA on 2025 June.
