@@ -19,12 +19,12 @@ def drop_missing(df, columns=None, threshold=None):
         return df_copy.dropna(thresh=int(threshold*df_copy.shape[1]))
     return df_copy.dropna()
 
-def normalize_data(df, columns=None, method='minmax'):
+def normalize_data(df, columns=None, method='minmax', feature_range=(0, 2)):
     df_copy = df.copy()
     if columns is None:
         columns = df_copy.select_dtypes(include=np.number).columns
     if method=='minmax':
-        scaler = MinMaxScaler()
+        scaler = MinMaxScaler(feature_range=feature_range)
     else:
         scaler = StandardScaler()
     df_copy[columns] = scaler.fit_transform(df_copy[columns])
