@@ -37,11 +37,11 @@ Goal → Stage → Deliverable
 + Detect anomalies → Outlier Analysis (Stage 07) → Outlier report, boxplots
 
 ## Repo Plan
-+/data/raw/, /data/processed/: Store raw and cleaned stock data (CSV/Parquet)
-+/src/: Acquisition, cleaning, and utility scripts (e.g.,scraping scraping script.py, cleaning.py, utils.py, outliers.py, etc.)
-+/notebooks/: Jupyter notebooks for each project stage (acquisition, cleaning, EDA, regression, etc.)
-+/docs/: Project documentation and slides
-+.gitignore, .env.example: demonstrated in .txt files, all uploaded
++ /data/raw/, /data/processed/: Store raw and cleaned stock data (CSV/Parquet)
++ /src/: Acquisition, cleaning, and utility scripts (e.g.,scraping scraping script.py, cleaning.py, utils.py, outliers.py, etc.)
++ /notebooks/: Jupyter notebooks for each project stage (acquisition, cleaning, EDA, regression, etc.)
++ /docs/: Project documentation and slides
++ .gitignore, .env.example: demonstrated in .txt files, all uploaded
 
 Update Cadence: Weekly during bootcamp, or as new features/data sources are added
 
