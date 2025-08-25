@@ -15,15 +15,16 @@ Quantitative performance metrics
 Comparative performance charts
 
 ## Assumptions & Constraints
-Assumptions:
-Historical pricing data is accurate and reliable.
-Constraints:
-Time: Limited to a 2-week bootcamp (live trading not feasible).
-Data: Dependent on CursorAI API's available stock price history.
++ The data is obtained from Yahoo Finance using the yfinance library, focusing on daily OHLCV for AAPL in 2023.
++ Numeric columns with missing values are imputed using the median, while columns with more than 50% missing data are removed.
++ Outliers are identified using the IQR method and visualized through boxplots; extreme outliers may be flagged or excluded.
++ The data is considered accurate as provided by the API, though access may be subject to rate limits or temporary unavailability.
++ This pipeline is intended for reference purposes only, not for professional trading.
 
 ## Known Unknowns / Risks
-Historical Bias: Backtested success ≠ future profitability.
-Data Limitations: Restricted to accessible market data.
++ Historical Bias: Backtested success ≠ future profitability.
++ Data Limitations: Restricted to accessible market data. Example for API scraping data, only yahoo finance can be scraped for free.
++ force majeure events：The future still unpreditable by many risks though the future trend of dataset is clear.
 
 ## Lifecycle Mapping
 Goal → Stage → Deliverable
@@ -36,11 +37,11 @@ Goal → Stage → Deliverable
 + Detect anomalies → Outlier Analysis (Stage 07) → Outlier report, boxplots
 
 ## Repo Plan
-/data/raw/, /data/processed/: Store raw and cleaned stock data (CSV/Parquet)
-/src/: Acquisition, cleaning, and utility scripts (e.g., acquisition.py, cleaning.py, utils.py, outliers.py, etc.)
-/notebooks/: Jupyter notebooks for each project stage (acquisition, cleaning, EDA, regression, etc.)
-/docs/: Project documentation and slides
-.gitignore, .env.example: Ensure secrets and local configs are not committed
++/data/raw/, /data/processed/: Store raw and cleaned stock data (CSV/Parquet)
++/src/: Acquisition, cleaning, and utility scripts (e.g.,scraping scraping script.py, cleaning.py, utils.py, outliers.py, etc.)
++/notebooks/: Jupyter notebooks for each project stage (acquisition, cleaning, EDA, regression, etc.)
++/docs/: Project documentation and slides
++.gitignore, .env.example: demonstrated in .txt files, all uploaded
 
 Update Cadence: Weekly during bootcamp, or as new features/data sources are added
 
