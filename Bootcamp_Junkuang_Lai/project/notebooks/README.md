@@ -45,9 +45,9 @@ Goal → Stage → Deliverable
 Update Cadence: Weekly during bootcamp, or as new features/data sources are added
 
 ## Data Cleaning Strategy
-Use a modular and reproducible pipeline for data cleaning, implemented in src/cleaning.py:
-Filling missing values: Numeric columns are filled with the median (robust to outliers).
-Dropping columns: Columns with >50% missing values are dropped.
-Scaling: Numeric features are scaled to [0, 1] for comparability.
-Outlier detection: IQR method is used to flag or remove extreme values.
-Visual comparison: Distributions and missingness are visualized before and after cleaning. All cleaning steps are implemented as reusable functions, ensuring transparency and reproducibility for future datasets.
++ Use a modular and reproducible pipeline for data cleaning, implemented in src/cleaning.py:
++ Filling missing values: Numeric columns are filled with the median (robust to outliers).
++ Dropping columns: Columns with >50% missing values are dropped.
++ Scaling: Numeric features are scaled to [0, 1] for comparability.
++ Outlier detection: IQR method is used to flag or remove extreme values.
++ Visual comparison: Distributions and missingness are visualized before and after cleaning. All cleaning steps are implemented as reusable functions, ensuring transparency and reproducibility for future datasets.
