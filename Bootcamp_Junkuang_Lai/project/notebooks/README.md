@@ -5,8 +5,8 @@
 Individual investors often face challenges in analyzing stock price trends and making informed, data-driven predictions due to a lack of tools and expertise. This project aims to tackle this issue by developing a reproducible pipeline that automates the collection, cleaning, and analysis of daily stock data for Nvidia (NVDA) for the year 2023. The objective is to identify historical price patterns, detect anomalies, and create a regression model to predict future prices, enabling more informed investment decisions.
 
 ## Stakeholder & User
-Stakeholder: Retail investors, financial bloggers, and educators seeking to empower individuals with better stock analytics,etc.
-User: Individual investors who want to track, analyze, and forecast Nvidia stock performance as part of their investment workflow. Users interact with the output via notebooks, dashboards, or reports, typically before making buy/sell/hold decisions.
++ Stakeholder: Retail investors, financial bloggers, and educators seeking to empower individuals with better stock analytics,etc.
++ User: Individual investors who want to track, analyze, and forecast Nvidia stock performance as part of their investment workflow. Users interact with the output via notebooks, dashboards, or reports, typically before making buy/sell/hold decisions.
 
 ## Useful Answer & Decision
 The project will identify historically profitable strategies through backtesting. While past performance does not guarantee future success, these strategies serve as predictive models.
@@ -15,7 +15,7 @@ Quantitative performance metrics
 Comparative performance charts
 
 ## Assumptions & Constraints
-+ The data is obtained from Yahoo Finance using the yfinance library, focusing on daily OHLCV for AAPL in 2023.
++ The data is obtained from Yahoo Finance using the yfinance library, focusing on daily OHLCV for NVDA on 2025 June.
 + Numeric columns with missing values are imputed using the median, while columns with more than 50% missing data are removed.
 + Outliers are identified using the IQR method and visualized through boxplots; extreme outliers may be flagged or excluded.
 + The data is considered accurate as provided by the API, though access may be subject to rate limits or temporary unavailability.
@@ -38,9 +38,9 @@ Goal → Stage → Deliverable
 
 ## Repo Plan
 + /data/raw/, /data/processed/: Store raw and cleaned stock data (CSV/Parquet)
-+ /src/: Acquisition, cleaning, and utility scripts (e.g.,scraping scraping script.py, cleaning.py, utils.py, outliers.py, etc.)
-+ /notebooks/: Jupyter notebooks for each project stage (acquisition, cleaning, EDA, regression, etc.)
-+ /docs/: Project documentation and slides
++ /src/: Acquisition, cleaning, and utility scripts (e.g., scraping script.py, cleaning.py, utils.py, outliers.py, etc.)
++ /notebooks/: Jupyter notebooks for each project stage (scraping script, cleaned_data/uncleaned_data, EDA, regression, etc.)
++ /docs/: Project documentation
 + .gitignore, .env.example: demonstrated in .txt files, all uploaded
 
 Update Cadence: Weekly during bootcamp, or as new features/data sources are added
