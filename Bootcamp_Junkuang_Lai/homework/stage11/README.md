@@ -35,6 +35,36 @@ Goal → Stage → Deliverable
 + Clean and prepare data → Data Preprocessing (Stage 06) → Cleaning scripts, visual comparison
 + Detect anomalies → Outlier Analysis (Stage 07) → Outlier report, boxplots
 
++ Exploratory Data Analysis (Stage 08)
+- Visualized distributions of Close, Volume, and High prices.
+- Identified right-skew and outliers in price and volume.
+- Explored relationships (e.g., Close vs Volume, Close over time).
+- Noted weak seasonality, presence of volatility clusters, and implications for feature engineering.
+
++ Feature Engineering (Stage 09)
+- Created `price_range` (High - Low) to capture daily volatility, based on EDA insights.
+- Created `close_ma_5_prev` (5-day moving average of Close, using only past data) to capture short-term trend.
+- Set target as next day's close (`close_next`).
+- Documented rationale and checked correlation/plots with target.
+
++ Linear Regression Modeling (Stage 10a)
+- Implemented linear regression with time-aware train-test split.
+- Generated diagnostic plots (residuals vs fitted, histogram, QQ plot).
+- Evaluated model with R² and RMSE metrics.
+- Provided coefficient interpretation and feature importance analysis.
+
++ Time Series & Classification (Stage 10b)
+- Engineered time series features (lagged returns, rolling statistics).
+- Implemented both regression and classification pipelines.
+- Evaluated models with appropriate metrics and diagnostic plots.
+- Provided comprehensive interpretation of model performance.
+
++ Evaluation & Risk Communication (Stage 11)
+- Bootstrap analysis with 600 resamples for robust uncertainty quantification.
+- Scenario sensitivity testing (5 different missing data handling approaches).
+- Subgroup diagnostics by segment with statistical testing.
+- Comprehensive stakeholder summary with risk assessment and recommendations
+
 ## Repo Plan
 + /data/raw/, /data/processed/: Store raw and cleaned stock data (CSV/Parquet)
 + /src/: Acquisition, cleaning, and utility scripts (e.g., scraping script.py, cleaning.py, utils.py, outliers.py, etc.)
